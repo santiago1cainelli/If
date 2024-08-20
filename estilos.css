@@ -1,0 +1,178 @@
+:root {
+    --blanco: #ffffff;
+    --oscuro: #212121;
+    --gris: #757575;
+    --primario: #5107ff;
+    --secundario: #109b7d;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+html {
+    font-size: 67.5%;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:var(--oscuro);
+    font-size: 16px;
+}
+header {
+    background-color: var(--secundario);
+}
+header h1 {
+    color: var(--primario);
+    text-align: center;    
+}
+h2 {
+    font-size: 2.8rem;
+}
+h3 {
+    font-size: 1.8rem;
+}
+h2,h3 {
+    color: var(--secundario);
+}
+
+.menu {
+    background-color: var(--oscuro);
+    color: var(--blanco);
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul li {
+    margin: 2px;
+    padding: 2px;
+    border: 1px solid var(gris);
+}
+
+.menu ul li a {
+    display: block;
+    width: 100px;
+    color: var(--blanco);
+    text-decoration: none;
+    text-align: center;
+    padding: 4px 0;
+    font-size: 11px;
+    background-color: var(--oscuro);
+    border-left: 10px solid var(--gris);
+}
+
+.menu ul li a:hover {
+    color: var(--primario);
+    background-color: var(--secundario);
+    border-left-color: var(--primario);
+}
+
+.menu-contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.menu-flex {
+    display: flex;
+    flex-direction: column;
+}
+@media (min-width: 768px) {
+    .menu-flex {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+/** Sección principal **/
+.principal {
+    background-image: url(./imagenes/negocios.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.contenido-principal {
+    position: absolute;
+    background-color: rgba(0,0,0,0.7);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem;
+}
+
+.contenido-principal p {
+    color: var(--blanco);
+}
+
+.principal-icono {
+    display: flex;
+    align-items: flex-end;
+}
+
+/** Main **/
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.sombra {
+    box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.45);
+    background-color: var(--blanco);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+/** Servicios **/
+.servicios {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1rem;
+}
+
+.servicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.servicio-icono {
+    width: 15rem;
+    height: 15rem;
+    background-color: var(--primario);
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/** Botón **/
+.boton {
+    background-color: var(--secundario);
+    color: var(--blanco);
+    padding: 1rem 3rem;
+    margin-top: 3rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    width: 90%;
+    text-align: center;
+    border: none;
+}
+
+@media (min-width: 768px) {
+    .boton {
+        width: auto;
+    }
+}

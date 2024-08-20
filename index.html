@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema de programcion</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <header>
+        <h1>Problema de programcion</h1>
+    </header>
+    <div>
+    <main>
+        <section>
+            <div>
+                <h2>Desicion simple</h2>
+                <label for="sueldo">Ingrese el sueldo</label>
+                <input type="number" id="sueldo" min="1" /><br />
+
+                <button onclick="calcular1()"> Calcular</button>
+            </div>
+            <p>Su sueldo final es: <span id="resultado1"></span></p>
+        </section>
+    </main>
+
+<div>
+    <main>
+        <section>
+            <div>
+                <h2>Desicion doble</h2>
+                <label for="sueldo">Ingrese el sueldo</label>
+                <input type="number" id="sueldo2" min="1" /><br />
+
+                <button onclick="calcular2()"> Calcular</button>
+            </div>
+            <p>Su sueldo final es: <span id="resultado2"></span></p>
+        </section>
+    </main>
+</div>
+
+<div>
+    <main>
+        <section>
+            <div>
+                <h2>Desicion multiple</h2>
+                <label for="sueldo">Ingrese el sueldo</label>
+                <input type="number" id="sueldo3" min="1" /><br />
+
+                <label for="categoria">Ingrese su categoria</label>
+                <input type="number" id="categoria" min="1" max="4"/><br />
+
+                <button onclick="calcular3()"> Calcular</button>
+            </div>
+            <p>Su sueldo final es: <span id="resultado3"></span></p>
+        </section>
+    </main>
+</div>
+
+<script src="./ejer1.js"></script>
+
+</body>
+
+</html>
